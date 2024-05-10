@@ -3,7 +3,8 @@ package user
 import "context"
 
 type Service interface {
-	CreateUser(ctx context.Context)
+	CreateUser() //todo: понять что делает интерфейс
+
 }
 
 type service struct {
@@ -13,3 +14,5 @@ type service struct {
 func (s *service) CreateUser(ctx context.Context, name, email, password_hash string) {
 
 }
+
+func (s *service)

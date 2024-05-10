@@ -1,6 +1,7 @@
 package user
 
-type ContentCreator struct {
+// user entity
+type User struct {
 	UUID          int    `Json:"uuid"`
 	Name          string `Json:"name"`
 	Email         string `Json:"email"`

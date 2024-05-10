@@ -1,5 +1,6 @@
 package pages
 
+// page entity
 type Page struct {
 	UUID       int    `json:"uuid" `
 	Name       string `json:"name" `
