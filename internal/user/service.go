@@ -3,16 +3,13 @@ package user
 import "context"
 
 type Service interface {
-	CreateUser() //todo: понять что делает интерфейс
-
+	CreateUser(ctx context.Context, dto *CreateUserDTO) *User
 }
 
 type service struct {
 	storage Storage
 }
 
-func (s *service) CreateUser(ctx context.Context, name, email, password_hash string) {
-
+func (s *service) CreateUser(ctx context.Context, dto *CreateUserDTO) *User {
+	return nil
 }
-
-func (s *service)
